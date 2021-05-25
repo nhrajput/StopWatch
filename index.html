@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP WATCH</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        display: inline;
+        text-align: center; 
+    }
+    .main{
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid white;
+        width: 323px;
+        background-color: tomato;
+        margin: 100px auto;
+        border-radius: 30%;
+    }
+    h1{
+        display: inline;
+        background-color: pink;
+        color: darkblue;
+        font-size: 2.3rem;
+        margin: 10px;
+        width: 100px;
+    }
+    button{
+        color: darkblue;
+        padding: 10px;
+        border: 2px solid lightcoral;
+        border-radius: 20px;
+        margin: 10px 5px;
+    }
+</style>
+<body>
+    <div class="main">
+<div>
+    <h1>Stop Watch</h1>
+</div>
+<div>
+    <h1 id="min">00</h1>
+    <h1 id="sec">00</h1>
+    <h1 id="msec">00</h1>
+</div>
+<div>
+    <button id='disabled' onclick="start()">Start</button>
+    <button onclick="pause()">pause</button>
+    <button onclick="reset()">Reset</button>
+</div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
